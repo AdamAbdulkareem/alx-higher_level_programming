@@ -1,2 +1,2 @@
-#!/bin/bash
-nuitka $PYFILE
+import py_compile
+py_compile.compile("$PYFILE")
