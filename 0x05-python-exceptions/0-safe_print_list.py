@@ -9,7 +9,6 @@ def safe_print_list(my_list=[], x=0):
             else:
                 continue
         print(end="\n")
-    except:
-        print("Value error")
-    finally:
-        return count
+    except ValueError:
+        return
+    return count
