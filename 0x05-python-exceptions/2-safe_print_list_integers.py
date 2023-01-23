@@ -12,7 +12,7 @@ def safe_print_list_integers(my_list=[], x=0):
                 continue
         else:
             continue
-    if list_count < x:
+    if (list_count < x):
         raise IndexError("list index out of range")
     print(end="\n")
     return count
