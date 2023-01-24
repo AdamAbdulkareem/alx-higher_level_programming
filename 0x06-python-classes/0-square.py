@@ -4,3 +4,6 @@ class Square:
 
     """A pass module for empty code block"""
     pass
+
+
+help(Square)
