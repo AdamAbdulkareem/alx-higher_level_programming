@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 class Square:
-    # This is an empty class that defines a squaare
+    """This is an empty class that defines a square"""
+
     pass
 
 
-help(Square)
+Square.__doc__
