@@ -49,6 +49,6 @@ class Square:
             return
         square_value = int(self.__size)
         square_display = "#" * square_value
-        for n in range(0, int(self.__size) + 1):
+        for n in range(0, int(self.__size)):
             print(square_display, end="\n")
         return
