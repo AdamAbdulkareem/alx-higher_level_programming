@@ -1,0 +1,13 @@
+import unittest
+from 0-add_integer import add_integer
+class Testadd_integer(unittest.TestCase):
+def test_returnInteger(self):
+self.assertEqual(add_integer(2, 4), 6)
+self.assertEqual(add_integer(2.0, 4.0), 6)
+self.assertEqual(add_integer(2.2, 4.4), 6)
+def test_dataType(self):
+self.assertRaises(TypeError, add_integer, 2, "four")
+self.assertRaises(TypeError, add_integer, "four", 2)
+self.assertRaises(TypeError, add_integer, 2.0, "four")
+self.assertRaises(TypeError, add_integer, "four", 2.0)
+self.assertRaises(TypeError, add_integer, "two", "four")
