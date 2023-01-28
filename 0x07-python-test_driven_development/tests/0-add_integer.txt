@@ -1,13 +1,53 @@
-import unittest
-from 0-add_integer import add_integer
-class Testadd_integer(unittest.TestCase):
-def test_returnInteger(self):
-self.assertEqual(add_integer(2, 4), 6)
-self.assertEqual(add_integer(2.0, 4.0), 6)
-self.assertEqual(add_integer(2.2, 4.4), 6)
-def test_dataType(self):
-self.assertRaises(TypeError, add_integer, 2, "four")
-self.assertRaises(TypeError, add_integer, "four", 2)
-self.assertRaises(TypeError, add_integer, 2.0, "four")
-self.assertRaises(TypeError, add_integer, "four", 2.0)
-self.assertRaises(TypeError, add_integer, "two", "four")
+# 0-add_integer.txt 
+
+=====================================
+ Doctest for 0-add_integer.py module
+=====================================
+
+This module has one function called ``add_integer()``.
+
+Integer
+=======
+
+``add_integer()`` returns the addition of its arguments. For integer,
+that value is equivalent to using the ``+`` operator.
+
+::
+
+    >>> add_integer = __import__("0-add_integer").add_integer
+    >>> add_integer(20, 80)
+    100
+    >>> add_integer(-20, 80)
+    60
+
+
+Floats
+======
+
+::
+
+    >>> add_integer(20.20, 80.80)
+    100
+    >>> add_integer(-20.20, 80.80)
+    60
+
+
+Strings
+=======
+
+::
+
+    >>> add_integer("twenty", 80)
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+    >>> add_integer(20, "eighty")
+    Traceback (most recent call last):
+    TypeError: b must be an integer
+    >>> add_integer("twenty", -80)
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+    >>> add_integer("twenty", "eighty")
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
+
