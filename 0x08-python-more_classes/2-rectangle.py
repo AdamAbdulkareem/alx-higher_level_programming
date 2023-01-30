@@ -3,6 +3,7 @@
 
 
 class Rectangle:
+
     """Representing a rectangle"""
 
     def __init__(self, width=0, height=0):
@@ -27,6 +28,7 @@ class Rectangle:
         if value < 0:
             raise ValueError("height must be >= 0")
         self.__height = value
+        return
 
     @property
     def width(self):
@@ -42,6 +44,7 @@ class Rectangle:
             raise ValueError("width must be >= 0")
 
         self.__width = value
+        return
 
     def area(self):
         """Returns the area of a rectangle"""
