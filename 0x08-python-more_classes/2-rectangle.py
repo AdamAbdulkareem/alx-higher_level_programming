@@ -65,4 +65,7 @@ class Rectangle:
         width_value = int(self.__width)
         height_value = int(self.__height)
         perimeter_value = 2 * (width_value + height_value)
+        if int(self.width) == 0 or int(self.height) == 0:
+            perimeter_value = 0
+            return perimeter_value
         return perimeter_value
