@@ -1,7 +1,10 @@
 #!/usr/bin/python3
 """Import a JSON module"""
 import json
+
 """A function that writes an object to a text file using JSON representation"""
+
+
 def save_to_json_file(my_obj, filename):
     """Write the filename or path provided by the function
     Return:
