@@ -6,8 +6,8 @@ import json
 
 
 def from_json_string(my_str):
-    """JSON representation of my_str
+    """Convert a JSON string to an object
     Return:
-        JSON representation
+        An object from JSON representation
     """
-    return json.dumps(my_str)
+    return json.loads(my_str)
