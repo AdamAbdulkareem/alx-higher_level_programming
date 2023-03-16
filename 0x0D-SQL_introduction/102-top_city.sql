@@ -1,0 +1,1 @@
+-- A script that displays the top 3 0f cities temperature during July and August
