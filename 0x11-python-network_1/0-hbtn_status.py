@@ -1,14 +1,15 @@
 #!/usr/bin/python3
-"""
-This script retrieves the content of a URL and print various details about the response
+"""A script that
+fetches https://intranet.hbtn.io/status.
 """
 
-if __name__ == "__main__":
+
+if __name__ == '__main__':
     import urllib.request
 
-    with urllib.request.urlopen("https://alx-intranet.hbtn.io/status") as response:
-        body = response.read()
+    with urllib.request.urlopen('https://intranet.hbtn.io/status') as resp:
+        content = resp.read()
         print("Body response:")
-        print(f"\t - type: {type(body)}")
-        print(f"\t - content: {body}")
-        print(f"\t - utf8 content: {body.decode('utf-8')}")
+        print("\t- type: {}".format(type(content)))
+        print("\t- content: {}".format(content))
+        print("\t- utf8 content: {}".format(content.decode('utf-8')))
