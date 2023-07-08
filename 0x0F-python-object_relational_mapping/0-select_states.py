@@ -5,7 +5,9 @@ It takes 3 arguments: mysql username, mysql password and mysql db_name
 """
 import MySQLdb
 import sys
-
+"""
+Import the MySQLdb and sys module
+"""
 username = sys.argv[1]
 password = sys.argv[2]
 db_name = sys.argv[3]
