@@ -26,7 +26,8 @@ if __name__ == "__main__":
     Create a cursor
     """
     cursor.execute(
-        "SELECT * FROM states WHERE name LIKE  BINARY'N%' ORDER BY states.id ASC"
+        "SELECT * FROM states WHERE name LIKE  BINARY'N%' \
+        ORDER BY states.id ASC"
     )
 
     results = cursor.fetchall()
