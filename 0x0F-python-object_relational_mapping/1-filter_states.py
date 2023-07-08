@@ -25,7 +25,9 @@ if __name__ == "__main__":
     """
     Create a cursor
     """
-    cursor.execute("SELECT * FROM states WHERE name LIKE 'N%' COLLATE utf8mb4_general_ci")
+    cursor.execute(
+        "SELECT * FROM states WHERE name LIKE 'N%' COLLATE utf8mb4_general_ci"
+    )
 
     results = cursor.fetchall()
     for row in results:
