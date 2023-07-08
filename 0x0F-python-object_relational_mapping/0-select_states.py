@@ -18,8 +18,16 @@ if __name__ == "__main__":
     by providing all the necessary connection parameters.
     Then, the result from the connection is fetched.
     """
-    db = MySQLdb.connect(host="localhost", user=username, passwd=password, db=db_name)
+    db = MySQLdb.connect(
+        host="localhost",
+        user=username,
+        port=3306,
+        passwd=password,
+        db=db_name)
     cursor = db.cursor()
+    """
+    Create the cursor object
+    """
     cursor.execute("SELECT * FROM states")
     results = cursor.fetchall()
 
